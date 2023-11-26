@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/navBar.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <div class="nav-wrapper #00838f cyan darken-3">
+        <div class="navbar-item">
+            <a href="#" data-target="saideNavBar" class="sidenav-trigger">
+                <i class="material-icons menu">menu</i>
+            </a>
+        </div>
+        <div class="navbar-item title">Therp-AI</div>
+    </div>
+
+    <ul id="saideNavBar" class="sidenav">
+
+        <li>
+            <div>
+                <div class="background">
+                    <ul>
+                        <li class="item-list close">
+                            <div>
+                                <a class="sidenav-close" href="#!">X</a>
+                            </div>
+                        </li>
+                        <li class="item-list logo">
+                            <img class="logo-image" src="../static/images/logo-3.png">
+
+                        </li>
+                        <li class="title-text">Therp-AI</li>
+                        <li class="subtitle-text"> YOUR MENTAL HEALTH ASSISTANT</li>
+                        <li class="item-list"><a href="/chat" class="menu-links"><i class="material-icons sidebar-items">chat</i>Chat</a></li>
+                        <li class="item-list"><a href="/info" class="menu-links"><i class="material-icons sidebar-items">info_outline</i>Info</a></li>
+                        <li class="item-list"><a href="/feedback" class="menu-links"><i class="material-icons sidebar-items">feedback</i>Feedback</a></li>
+                        <li class="item-list"><a href="/contactUs" class="menu-links"><i class="material-icons sidebar-items">contact_mail</i>Contact Us</a></li>
+                    </ul>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    {% block content %} {% endblock %}
+
+</body>
+
+</html>

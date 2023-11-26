@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+.sidenav {
+    background-color: black;
+}
+
+.sidenav-close {
+    float: right;
+    color: black;
+    padding: 10px;
+}
+
+.logo-image {
+    height: 100px;
+    margin: 0 20px;
+}
+
+.nav-wrapper {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    color: white;
+    font-size: 35px !important;
+    margin-left: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 35px !important;
+    text-align: center;
+    flex: 1;
+    font-family: Kanit;
+}
+
+.sidebar-items {
+    display: block !important;
+    font-size: 20px !important;
+    height: 48px !important;
+    line-height: 48px !important;
+    padding-left: 32px;
+}
+
+.item-list {
+    display: flex;
+}
+
+.google-form {
+    text-align: center;
+}
+
+#chat-container {
+    width: 80%;
+    border: black solid 1px;
+    margin: 15px;
+}
+
+#chat-messages {
+    padding: 15px;
+}
+
+#user-input {
+    border: 1px solid #9e9e9e;
+    padding: 10px;
+    width: 95%;
+    margin: 10 10;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.chat-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user {
+    background-color: #e6e6e6;
+    /* Light gray for user messages */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width:fit-content
+}
+
+.bot {
+    background-color: #0774ca54;
+    /* Light blue for bot messages */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width:fit-content
+}
+
+.menu-links {
+    width: 100%
+}
+
+.logo {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+}
+
+.close {
+    float: right !important;
+}
+
+.title-text {
+    text-align: center;
+    line-height: 20px !important;
+    font-weight: 600;
+    font-family: Kanit;
+    color: #1d6894;
+}
+
+.subtitle-text {
+    text-align: center;
+    line-height: 20px !important;
+    font-family: Nanum Gothic;
+    padding-bottom: 15px;
+    color: #065685;
+    font-size: 10px;
+}
+
+.info-container {
+    width: 100% !important;
+}
+

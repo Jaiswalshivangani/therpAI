@@ -1,0 +1,10 @@
+intents:
+  - greet
+  - ask_question
+  - need_help
+
+entities:
+  - topic
+
+actions:
+  - ProvideSupportAction
