@@ -37,7 +37,7 @@ def call_palm_api(prompt):
     }
 
     response = requests.post(
-        "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyD_q04TyZBH7hH-eVzh5RT0ej4jGkcPF4k",
+        "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key={{key}}",
         headers=headers,
         json=data,
     )
